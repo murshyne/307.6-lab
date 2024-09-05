@@ -19,10 +19,13 @@
 }
 
 .header, .footer, .div1, .div2{
-    border: 2px solid #000;
+    border: 1px solid #b9afaf;
     padding: 10px;
 }
-.main, main1{
+.header{
+    min-height: 40px;
+}
+.main, .main1{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -30,7 +33,7 @@
 .main1{
     flex: 2;
 }
-.main1.div{
+.main1>div{
     flex: 1;
 }
 .main2{
@@ -47,10 +50,22 @@
     min-height: 130px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .main{
         flex: 100%;
     }
 
+    .main1.div{
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main1.div{
+        flex: 100%;
+        min-height: 350px;
+    }
+
+    
     
 }
