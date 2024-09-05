@@ -44,7 +44,8 @@
 }
 
 .main2>div{
-    min-height: 233px;
+    min-height: 150px;
+    min-width: 300px;
 }
 .footer{
     min-height: 130px;
